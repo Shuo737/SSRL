@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>Online Documentation</title><link rel="stylesheet" href="manual.css"></link>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(197, 200, 198); overflow: auto; background-color: rgb(29, 31, 33); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(155, 160, 157); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(155, 160, 157); border-color: rgb(67, 72, 76); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(67, 72, 76); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(67, 72, 76); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(48, 51, 55); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(39, 41, 44); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(67, 72, 76) rgb(67, 72, 76) rgb(53, 57, 60); background-color: rgb(48, 51, 55); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #1d1f21;
+  color: #c5c8c6;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(197, 200, 198, 0.2);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(197, 200, 198, 0.2);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(197, 200, 198, 0.1);
+}
+pre.editor-colors .gutter,
+.host .gutter {
+  background-color: #292c2f;
+}
+pre.editor-colors .gutter .cursor-line,
+.host .gutter .cursor-line {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+pre.editor-colors .line-number.cursor-line-no-selection,
+.host .line-number.cursor-line-no-selection {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #fba0e3;
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #c5c8c6;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-color: #ffffff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #444444;
+}
+pre.editor-colors .source.gfm,
+.host .source.gfm {
+  color: #999;
+}
+pre.editor-colors .gfm .markup.heading,
+.host .gfm .markup.heading {
+  color: #eee;
+}
+pre.editor-colors .gfm .link,
+.host .gfm .link {
+  color: #555;
+}
+pre.editor-colors .gfm .variable.list,
+.host .gfm .variable.list,
+pre.editor-colors .gfm .support.quote,
+.host .gfm .support.quote {
+  color: #555;
+}
+pre.editor-colors .gfm .link .entity,
+.host .gfm .link .entity {
+  color: #ddd;
+}
+pre.editor-colors .gfm .raw,
+.host .gfm .raw {
+  color: #aaa;
+}
+pre.editor-colors .markdown .paragraph,
+.host .markdown .paragraph {
+  color: #999;
+}
+pre.editor-colors .markdown .heading,
+.host .markdown .heading {
+  color: #eee;
+}
+pre.editor-colors .markdown .raw,
+.host .markdown .raw {
+  color: #aaa;
+}
+pre.editor-colors .markdown .link,
+.host .markdown .link {
+  color: #555;
+}
+pre.editor-colors .markdown .link .string,
+.host .markdown .link .string {
+  color: #555;
+}
+pre.editor-colors .markdown .link .string.title,
+.host .markdown .link .string.title {
+  color: #ddd;
+}
+.bracket-matcher .region {
+  border-bottom: 1px solid #f8de7e;
+  margin-top: -1px;
+  opacity: .7;
+}
+.comment {
+  color: #7C7C7C;
+}
+.entity {
+  color: #FFD2A7;
+}
+.entity.name.type {
+  text-decoration: underline;
+  color: #FFFFB6;
+}
+.entity.other.inherited-class {
+  color: #9B5C2E;
+}
+.keyword {
+  color: #96CBFE;
+}
+.keyword.control {
+  color: #96CBFE;
+}
+.keyword.operator {
+  color: #EDEDED;
+}
+.storage {
+  color: #CFCB90;
+}
+.storage.modifier {
+  color: #96CBFE;
+}
+.constant {
+  color: #99CC99;
+}
+.constant.numeric {
+  color: #FF73FD;
+}
+.variable {
+  color: #C6C5FE;
+}
+.invalid.deprecated {
+  text-decoration: underline;
+  color: #FD5FF1;
+}
+.invalid.illegal {
+  color: #FD5FF1;
+  background-color: rgba(86, 45, 86, 0.75);
+}
+.string .source,
+.string .meta.embedded.line {
+  color: #EDEDED;
+}
+.string .punctuation.section.embedded {
+  color: #00A0A0;
+}
+.string .punctuation.section.embedded .source {
+  color: #00A0A0;
+}
+.string {
+  color: #A8FF60;
+}
+.string .constant {
+  color: #00A0A0;
+}
+.string.regexp {
+  color: #E9C062;
+}
+.string.regexp .constant.character.escape,
+.string.regexp .source.ruby.embedded,
+.string.regexp .string.regexp.arbitrary-repetition {
+  color: #FF8000;
+}
+.string.regexp.group {
+  color: #C6A24F;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.string.regexp.character-class {
+  color: #B18A3D;
+}
+.string .variable {
+  color: #8A9A95;
+}
+.support {
+  color: #FFFFB6;
+}
+.support.function {
+  color: #DAD085;
+}
+.support.constant {
+  color: #FFD2A7;
+}
+.support.type.property-name.css {
+  color: #EDEDED;
+}
+.source .entity.name.tag,
+.source .punctuation.tag {
+  color: #96CBFE;
+}
+.source .entity.other.attribute-name {
+  color: #C6C5FE;
+}
+.entity.other.attribute-name {
+  color: #C6C5FE;
+}
+.entity.name.tag.namespace,
+.entity.other.attribute-name.namespace {
+  color: #E18964;
+}
+.meta.preprocessor.c {
+  color: #8996A8;
+}
+.meta.preprocessor.c .keyword {
+  color: #AFC4DB;
+}
+.meta.cast {
+  color: #676767;
+}
+.meta.sgml.html .meta.doctype,
+.meta.sgml.html .meta.doctype .entity,
+.meta.sgml.html .meta.doctype .string,
+.meta.xml-processing,
+.meta.xml-processing .entity,
+.meta.xml-processing .string {
+  color: #494949;
+}
+.meta.tag .entity,
+.meta.tag > .punctuation,
+.meta.tag.inline .entity {
+  color: #C6C5FE;
+}
+.meta.tag .name,
+.meta.tag.inline .name,
+.meta.tag > .punctuation {
+  color: #96CBFE;
+}
+.meta.selector.css .entity.name.tag {
+  text-decoration: underline;
+  color: #96CBFE;
+}
+.meta.selector.css .entity.other.attribute-name.tag.pseudo-class {
+  color: #8F9D6A;
+}
+.meta.selector.css .entity.other.attribute-name.id {
+  color: #8B98AB;
+}
+.meta.selector.css .entity.other.attribute-name.class {
+  color: #62B1FE;
+}
+.meta.property-group .support.constant.property-value.css,
+.meta.property-value .support.constant.property-value.css {
+  color: #F9EE98;
+}
+.meta.preprocessor.at-rule .keyword.control.at-rule {
+  color: #8693A5;
+}
+.meta.property-value .support.constant.named-color.css,
+.meta.property-value .constant {
+  color: #87C38A;
+}
+.meta.constructor.argument.css {
+  color: #8F9D6A;
+}
+.meta.diff,
+.meta.diff.header {
+  color: #F8F8F8;
+  background-color: #0E2231;
+}
+.meta.separator {
+  color: #60A633;
+  background-color: #242424;
+}
+.meta.line.entry.logfile,
+.meta.line.exit.logfile {
+  background-color: rgba(238, 238, 238, 0.16);
+}
+.meta.line.error.logfile {
+  background-color: #751012;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="northern-sk-communities-online-mapping-system">Northern SK Communities Online Mapping System</h1>
+<h2 id="user-s-manual">User&#39;s Manual</h2>
+<hr>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#application-layout">Application layout</a></li>
+<li><a href="#navigation">Navigation</a></li>
+<li><a href="#data-structure-and-chart-types">Data Structure and Chart Types</a><ul>
+<li><a href="#two-data-structures">Two data structures</a></li>
+<li><a href="#four-chart-types">Four Chart Types</a><ul>
+<li><a href="#bar-chart-map">Bar Chart Map</a></li>
+<li><a href="#pie-chart-map">Pie Chart Map</a></li>
+<li><a href="#dot-map">Dot Map</a></li>
+<li><a href="#heat-map">Heat Map</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#contact-information">Contact Information</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>This document will get you started with the online mapping application &quot;Northern SK Communities Online Mapping System&quot;, which is developed and maintained by <a href="https://www.google.ca/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjyh4-o9PHOAhUDpR4KHep0BaAQFggeMAA&amp;url=http%3A%2F%2Fwww.usask.ca%2Ficngd%2F&amp;usg=AFQjCNGQ822DlQuIL4ps9W6WlF7Rn6EdBg&amp;sig2=FDJmBg7jS4z-6xLIxROEJw">International Centre for Northern Governance and Development (ICNGD)</a> and <a href="https://www.google.ca/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjLgsvU9PHOAhXGKB4KHR1sA_8QFggdMAA&amp;url=http%3A%2F%2Fssrl.usask.ca%2F&amp;usg=AFQjCNGOxO_N4W6un3LcvepspdTGQzIuTA&amp;sig2=H3MP1W49-gyPJ1n8GOCjkA&amp;bvm=bv.131783435,d.dmo">Social Sciences Research Laboratories/The Spatial Initiative (SSRL/TSI)</a>, at University of Saskatchewan.</p>
+<p>The application was developed for the ubiquitous html environment using modern open source technology. It is designed as a cross-browser application that functions in all major desktop browsers. At the current stage, the application is not optimized for mobile browsers (phones, tablets etc).
+The application is an effort of organizing and presenting a wealth of social-economic variables from ICNGD in the form of quality maps, in order to provide effective decision support for First Nation communities in Northern Saskatchewan. Most maps involve data with 3 dimensions: time, location, as well as the hierarchical structure of the variable.</p>
+<p>Though the application is designed for general browsers, Webkit browsers (Google Chrome, Apple Safari) are recommended for a much better user experience.</p>
+<h2 id="application-layout">Application layout</h2>
+<p>The mapping application consists of 3 components:</p>
+<ul>
+<li>Map view<ul>
+<li>The map view takes most of the space and provide itself as your workspace for showing maps, as well as rendering charts.</li>
+</ul>
+</li>
+<li>Table of Contents (TOC)<ul>
+<li>TOC has a tree-like structure. It has all statistical variables organized as layers in the hierarchical order. There are 7 top categories, 55 items in total, and 37 layers you can map.</li>
+<li>&#39;Close&#39; button: This button will collapse TOC panel and hide it, so that you can have bigger desktop space for you to work on. Once collapsed, you can bring TOC panel back either by clicking the &#39;Table of Contents&#39; button at the top of the page or &#39;Table of Contents&#39; at the bottom toolbar.</li>
+<li>There are 3 buttons in TOC:<ul>
+<li><em>Search a variable</em>: This button helps you to filter all available layers using your own keywords so as to find your desired variables efficiently.</li>
+<li><em>Turn All Layers Off</em>: This button removes all layers shown on the map. Use it as a shortcut for removing multiple layers, otherwise you need to either remove layers from their legends or from TOC.</li>
+<li><em>Atlas</em>: SSRL/TSI has manually designed quality printer-friendly PDF maps, usually only available for latest year&#39;s data. Users can access them from here.
+Although TOC is very important for you to find At its top right corner there&#39;s a &#39;Close&#39; button to collapse it.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Bottom toolbar<ul>
+<li>At the bottom of the page there is a toolbar. It has 4 functions:<ul>
+<li>Help: the documentation for this mapping application.</li>
+<li>Toggle TOC: Click &#39;Table of Contents&#39; button to show or hide the TOC.</li>
+<li>Search for a community: If you want to locate a community on the map, just type in the community&#39;s name here. A list of suggestions will pop up as you type. You can click an item in that list to locate it on the map.</li>
+<li>Show current map&#39;s centre: At the far right shows your maps current centre, in the format of <code>latitude, longitude</code> (note that latitude is positive on the northern hemisphere, longitude is negative in the western hemisphere).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="navigation">Navigation</h2>
+<p>For general navigation on the map, the map control (<code>+</code>, <code>-</code> buttons at the map&#39;s top right corner) is effective and intuitive to use. More intuitively, the user can use a mouse with the scroll button to zoom in or out dynamically.</p>
+<p>The user can have more control on zooming in to a specific area by holding down <code>SHIFT</code> key while dragging the mouse to define a rectangle, which will be used as the map&#39;s new extent.</p>
+<p><em>Change the Base Map</em>: At the bottom-left of the screen there is a button, users can change the base map to best suit their needs.</p>
+<h2 id="data-structure-and-chart-types">Data Structure and Chart Types</h2>
+<p>All statistical variables in the mapping system fall into these 2 categories: bar-structured and pie-structured.</p>
+<h3 id="two-data-structures">Two data structures</h3>
+<p>Bar-structured data type is for mapping time series data for simple variables (eg. number of households in all communities across 10 years). This type of data can be rendered as <em>bar chart</em>, <em>dot map</em> or <em>heat map</em>.</p>
+<p>Pie-structured data type is for mapping time series data for compound variables (eg. various degree of education levels in all communities across 10 years). This type of data can be rendered as <em>pie chart</em>, <em>dot map</em> or <em>heat map</em>.</p>
+<h3 id="four-chart-types">Four Chart Types</h3>
+<p>The system supports rendering these 4 types of maps: bar chart map, pie chart map, dot map and heat map. When you turn on a layer of any type, its legend will also show up with detailed information about that layer, as well as settings to allow you configure that layer&#39;s appearance.</p>
+<h4 id="bar-chart-map">Bar Chart Map</h4>
+<p>A &quot;Bar Chart Map&quot; is generated by rendering all the values of a single target variable individually at each geographical location. A “Bar Chart Map” can effectively portray the long-term trend of a desired variable. It also compares such trends between different geographical locations.</p>
+<p><strong>Interpretation</strong> Each geographical location has several bars. The color of each bar indicates a year. The height of the bar indicates value of the target variable in that year. You can directly compare the values of any two geographical locations based on the bar’s height.</p>
+<p><strong>Usage</strong></p>
+<p>On the map, you can hover on a bar chart to</p>
+<ul>
+<li>highlight any bar (one year&#39;s data), making it yellow.</li>
+<li>tooltip shows up explaining the bar chart with detailed information: place&#39;s name, variable&#39;s name, value of current variable, rank of the current variable among all communities in the same year.</li>
+</ul>
+<p>In the legend, you can</p>
+<ul>
+<li>control the layer by accessing:<ul>
+<li><strong>eye button</strong> to temporarily turn it off. Note that once a layer is hidden, you cannot interact with it until you turn it back on by clicking the eye button again.</li>
+<li><strong>minimize button</strong> to collapse the legend, the collapsed legend will only have<ul>
+<li>the control buttons (eye, min, max)</li>
+<li>the layer&#39;s title</li>
+<li>chart icon in front of the title to tell what type of chart this layer produces</li>
+</ul>
+</li>
+<li><strong>close button</strong> to remove the layer from the map.</li>
+</ul>
+</li>
+<li>See the title of current layer</li>
+<li>Change chart types to dot map or heatmap</li>
+<li>Check its metadata</li>
+<li>Download the original data in Microsoft&trade; EXCEL&reg; Format.</li>
+<li>Configuration<ul>
+<li><strong>Border Color</strong> Adjust the color of bar&#39;s borders</li>
+<li><strong>Bar&#39;s Min Height</strong> Adjust height for bars with smallest values</li>
+<li><strong>Y Axis Transform</strong> Whether to use the original values to make the bar chart, or apply logarithm transformation on the values before making the ba chart</li>
+</ul>
+</li>
+</ul>
+<h4 id="pie-chart-map">Pie Chart Map</h4>
+<p>A &quot; Pie Chart Map&quot; is generated by making a pie chart of a variable for all geographical locations, with the variable containing categories of data.</p>
+<p><strong>Interpretation</strong> You can compare the size of pies because the sizes are based on the classification of the original total values (3-5 classes from low to high). The total value is the sum its categories. The application draw pie slices from 12 o’clock in the clock-wise manner.</p>
+<p><strong>Usage</strong></p>
+<p>On the map, you can hover your cursor on any pie to:</p>
+<ul>
+<li>Highlight the pie slice in the chart: the pie slice will become bright yellow.</li>
+<li>There will also be a tooltip available for that slice, showing<ul>
+<li>place’s name</li>
+<li>name of the current variable</li>
+<li>name and value of the current category</li>
+<li>the displayed year</li>
+</ul>
+</li>
+</ul>
+<p>In the legend, you can</p>
+<ul>
+<li>control the layer by accessing:<ul>
+<li><strong>eye button</strong> to temporarily turn it off. Note that once a layer is hidden, you cannot interact with it until you turn it back on by clicking the eye button again.</li>
+<li><strong>minimize button</strong> to collapse the legend, the collapsed legend will only have<ul>
+<li>the control buttons (eye, min, max)</li>
+<li>the layer&#39;s title</li>
+<li>chart icon in front of the title to tell what type of chart this layer produces</li>
+</ul>
+</li>
+<li><strong>close button</strong> to remove the layer from the map.</li>
+</ul>
+</li>
+<li>Hover your cursor on any category to highlight the corresponding pie slices on the map.</li>
+<li>Click the painter button to design the pie chart with your own colors.</li>
+<li>Click on the play button ￼(black triangle) to play the animation of the pie chart across all available time periods/years.</li>
+<li>Change chart types to dot map or heat map</li>
+<li>Check its metadata</li>
+<li>Download the original data in Microsoft&trade; EXCEL&reg; Format.</li>
+</ul>
+<h4 id="dot-map">Dot Map</h4>
+<p>A dot map is generated by drawing the values of a target variable for all geographical places at the same time period/year. It supports animation to examine the dynamic change of the target variable across all available time periods/years in the database.</p>
+<p><strong>Interpretation</strong> The values of the variable are classified into 3 to 5 categories (low to high), indicated by the size of the dots. Note that the size of the dot corresponds to its classified category instead of its original value (A twice as big as B doesn’t mean A’s original value of the variable is twice as big as B’s). The dot map is effective at comparing the values of a desired variable for all geographical places at the same time period.</p>
+<p><strong>Usage</strong></p>
+<p>On the map, you can hover your cursor on any dot to</p>
+<ul>
+<li>Highlight the dot in the charts: the dot will become bright yellow.</li>
+<li>There will also be a tooltip available for that dot, showing<ul>
+<li>place’s name</li>
+<li>name of the current variable</li>
+<li>value of the current variable at the displayed year</li>
+<li><em>optional</em> rank of the current variable at the displayed year among all the places in this layer</li>
+</ul>
+</li>
+</ul>
+<p>In the legend, you can</p>
+<ul>
+<li>Control the layer by accessing:<ul>
+<li><strong>eye button</strong> to temporarily turn it off. Note that once a layer is hidden, you cannot interact with it until you turn it back on by clicking the eye button again.</li>
+<li><strong>minimize button</strong> to collapse the legend, the collapsed legend will only have<ul>
+<li>the control buttons (eye, min, max)</li>
+<li>the layer&#39;s title</li>
+<li>chart icon in front of the title to tell what type of chart this layer produces</li>
+</ul>
+</li>
+<li><strong>close button</strong> to remove the layer from the map</li>
+</ul>
+</li>
+<li>Click on the color patch or name of each year (eg. 2014) to update the map for that year.</li>
+<li><em>Pie chart only</em> click on the color patch for any category to update the map for that category</li>
+<li>Click on the play button (black triangle)￼ to play the animation of the dot map across all time periods/years.</li>
+<li>Change chart types to pie/bar chart map or heat map</li>
+<li>Check its metadata</li>
+<li>Download the original data in Microsoft&trade; EXCEL&reg; Format.</li>
+</ul>
+<h4 id="heat-map">Heat Map</h4>
+<p>A &quot;heat map&quot; is generated based on a dot map. It is good at portraying the clustering pattern of a desired variable. If the default rendering scheme is used, red means more clustering whereas green means the opposite.</p>
+<p><strong>Usage</strong></p>
+<p>On the map, you can hover your cursor anywhere to</p>
+<ul>
+<li>bring up a tooltip showing  - place’s name<ul>
+<li>name of the current variable</li>
+<li>interpolated value of the current variable at your cursor&#39;s location at the displayed year, for the current category (pie chart)</li>
+</ul>
+</li>
+</ul>
+<p>In the legend, you can</p>
+<ul>
+<li>Control the layer by accessing:<ul>
+<li><strong>eye button</strong> to temporarily turn it off. Note that once a layer is hidden, you cannot interact with it until you turn it back on by clicking the eye button again.</li>
+<li><strong>minimize button</strong> to collapse the legend, the collapsed legend will only have<ul>
+<li>the control buttons (eye, min, max)</li>
+<li>the layer&#39;s title</li>
+<li>chart icon in front of the title to tell what type of chart this layer produces</li>
+</ul>
+</li>
+<li><strong>close button</strong> to remove the layer from the map</li>
+</ul>
+</li>
+<li>Click on the color patch or name of each year (eg. 2014) to update the map for that year.</li>
+<li><em>Pie chart only</em> click on the color patch for any category to update the map for that category</li>
+<li>Click on the play button (black triangle)￼ to play the animation of the dot map across all time periods/years.</li>
+<li>Change chart types to pie/bar chart map or dot map</li>
+<li>Check its metadata</li>
+<li>Download the original data in Microsoft&trade; EXCEL&reg; Format.</li>
+<li>Configuration<ul>
+<li><strong>Theme</strong> Adjust the color scheme used for producing the heat map. There are in total 4 color schemes to choose from.</li>
+<li><strong>Exaggeration</strong> Whether to use the original values to make the heat map, or apply a factor (multiplier) to the original values before making the heat map. This comes in convenient if the default rendering is either extremely <em>hot</em> or <em>cold</em>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="contact-information">Contact Information</h2>
+<p>This project is supervised by Dr. Winston Zeng (<a href="mailto:winston.zeng@usask.ca">winston.zeng@usask.ca</a>) at SSRL, University of Saskatchewan. These are the project teams:</p>
+<p><strong>General Questions</strong>:</p>
+<div class="contact">
+  <p>Dr. Winston Zeng, <em>Associate Director</em><br>
+  The Spatial Initiative, University of Saskatchewan<br>
+  Email: <a href="mailto:Winston.zeng@usask.ca">Winston.zeng@usask.ca</a><br>
+  Tel: <a href="tel:1-306-966-5133">306-966-5133</a></p>
+</div>
+<p><strong>Data Questions</strong>:</p>
+<div class="contact">
+  <p>Stan Yu<br>
+  The International Centre for Northern Governance and Development<br>
+  University of Saskatchewan<br>
+  Email: <a href="mailto:stan.yu@usask.ca">stan.yu@usask.ca</a><br>
+  Tel: <a href="tel:1-306-966-6234">306-966-6234</a></p>
+</div>
+<p><strong>Website Support Questions</strong>:</p>
+<div class="contact">
+  <p>Matthew Li, <em>Assistant GIS Research Manager and GIS developer</em><br>
+  The Spatial Initiative, University of Saskatchewan<br>
+  Email: <a href="mailto:meng.li@usask.ca">meng.li@usask.ca</a></p>
+</div>
+<hr>
+<p>SSRL/TSI, September 2016</p></body>
+</html>
