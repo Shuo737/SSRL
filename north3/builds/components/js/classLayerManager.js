@@ -466,7 +466,8 @@ global.LayerManager.prototype.getLegend = function(){
       lyr.showConfig();
     });
 
-    misc_control.append(src).append(dl).append(filter).append(config);
+    // misc_control.append(src).append(dl).append(filter).append(config);
+    misc_control.append(src).append(dl).append(config);
 
     container.append('<div class="title">' +
       this.getNode().getMenu().getTitle() + '</div></div>')

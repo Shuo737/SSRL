@@ -201,6 +201,21 @@ function initMapSwitcher(){
   });
 }
 
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
 function init_ui(){
 
   showModalMsg('Initializing the User Interface...');
@@ -356,6 +371,28 @@ function init_ui(){
     showModalMsgAuto('Loading demo dataset...');
     menu_broker.preload('household_size');
   }
+
+  setTimeout(function(){
+    console.log(getCookie("def_tutorial"));
+    if( getCookie("def_tutorial") != 0 || getCookie("def_tutorial") == ""){
+      w2popup.open({
+        title: 'Tutorial',
+        width: 500,
+        height: 200,
+        modal: true,
+        body: '<div class="tutorial"><h3><i class="fa fa-video-camera"></i> Document Tutorial</h3><p>Welcome to the Northern Saskatchewan Communities! Do you need any introduction?</p></div>',
+        buttons   : '<button class="btn btn-default"><a href="docs/manual.html">Sure</a></button> <button class="btn btn-default" id="btnCancel">No Thanks!</button>',
+        onOpen: function(e){
+          e.onComplete = function(){
+            $.cookie('def_tutorial', 0, { expires: 3650, path: '/' });
+            $('#w2ui-popup #btnCancel').click(function(e){
+              w2popup.close();
+            });
+          }
+        }
+      });
+    }
+  }, 3000);
 }
 
 function removeAllLayers(){
