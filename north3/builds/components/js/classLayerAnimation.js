@@ -15,7 +15,7 @@ global.LayerAnimation = function(node){
 global.LayerAnimation.prototype.start = function(){
   var self = this;
   if(self._maxYear < 2){
-    showAlertAuto('Multiple year\'s data are required to use this function!', 'danger');
+    showModalMsg('Multiple year\'s data are required to use this function!', 'danger');
     return false;
   }
   self._interval = setInterval(function(){

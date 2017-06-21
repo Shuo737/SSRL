@@ -322,141 +322,141 @@ global.LayerManager.prototype.getLegend = function(){
       me.getNode().downloadXls();
     });
 
-    var filter = $('<div class="filter"><i class="icon icon-filter"></i>Filter</div>');
-    filter.click(function(e){
-      e.stopPropagation();
-      var node = me.getNode();
+    // var filter = $('<div class="filter"><i class="icon icon-filter"></i>Filter</div>');
+    // filter.click(function(e){
+    //   e.stopPropagation();
+    //   var node = me.getNode();
 
-      var modal = $(['<div class="modal fade filter" data-backdrop="static" role="dialog">',
-                    '<div class="modal-dialog">',
-                      '<div class="modal-content">',
-                      '<div class="modal-header">',
-                        '<button type="button" class="close" data-dismiss="modal"><i class="icon icon-cancel-squared"></i></button>',
-                        '<h4 class="modal-title">',
-                          '<i class="icon icon-info-circled"></i>',
-                          'Filter Content',
-                        '</h4>',
-                      '</div>',
-                      '<div class="modal-body">',
-                        '<h3 class="title">', node.getMetaNode().getMenu().getTitle(), '</h3>',
-                        '<table>',
-                          '<tr>',
-                            '<td class="caption">Province</td>',
-                            '<td class="province">',
-                              '<label><input type="checkbox" data="59"> BC</label>',
-                              '<label><input type="checkbox"  data="48"> AB</label>',
-                              '<label><input type="checkbox" data="47"> SK</label>',
-                              '<label><input type="checkbox" data="46"> MB</label>',
-                            '</td>',
-                          '</tr>',
-                          '<tr>',
-                            '<td class="caption">Other Attributes</td>',
-                            '<td>', 'Attributes...', '</td>',
-                          '</tr>',
-                        '</table>',
-                      '</div>',
-                      '<div class="modal-footer">',
-                          '<button type="button" data="apply" class="btn btn-success">Apply</button>',
-                          '<button type="button" data="removeAll" class="btn btn-success">Remove All</button>',
-                      '</div>',
-                    '</div>',
-                  '</div>'].join(''));
+    //   var modal = $(['<div class="modal fade filter" data-backdrop="static" role="dialog">',
+    //                 '<div class="modal-dialog">',
+    //                   '<div class="modal-content">',
+    //                   '<div class="modal-header">',
+    //                     '<button type="button" class="close" data-dismiss="modal"><i class="icon icon-cancel-squared"></i></button>',
+    //                     '<h4 class="modal-title">',
+    //                       '<i class="icon icon-info-circled"></i>',
+    //                       'Filter Content',
+    //                     '</h4>',
+    //                   '</div>',
+    //                   '<div class="modal-body">',
+    //                     '<h3 class="title">', node.getMetaNode().getMenu().getTitle(), '</h3>',
+    //                     '<table>',
+    //                       '<tr>',
+    //                         '<td class="caption">Province</td>',
+    //                         '<td class="province">',
+    //                           '<label><input type="checkbox" data="59"> BC</label>',
+    //                           '<label><input type="checkbox"  data="48"> AB</label>',
+    //                           '<label><input type="checkbox" data="47"> SK</label>',
+    //                           '<label><input type="checkbox" data="46"> MB</label>',
+    //                         '</td>',
+    //                       '</tr>',
+    //                       '<tr>',
+    //                         '<td class="caption">Other Attributes</td>',
+    //                         '<td>', 'Attributes...', '</td>',
+    //                       '</tr>',
+    //                     '</table>',
+    //                   '</div>',
+    //                   '<div class="modal-footer">',
+    //                       '<button type="button" data="apply" class="btn btn-success">Apply</button>',
+    //                       '<button type="button" data="removeAll" class="btn btn-success">Remove All</button>',
+    //                   '</div>',
+    //                 '</div>',
+    //               '</div>'].join(''));
 
-      $('#layout').append(modal);
+    //   $('#layout').append(modal);
 
-      modal.on('hidden.bs.modal', function(){
+    //   modal.on('hidden.bs.modal', function(){
 
-        // remove the modal dialog when its turned off
-        modal.remove();
+    //     // remove the modal dialog when its turned off
+    //     modal.remove();
 
-      }).on('shown.bs.modal', function(){
+    //   }).on('shown.bs.modal', function(){
 
-        // load existing filters
-        var fm = me.getFilterManager();
-        var filters = fm.getFilters();
+    //     // load existing filters
+    //     var fm = me.getFilterManager();
+    //     var filters = fm.getFilters();
 
-        if(filters.length){
-          for (var i = 0; i < filters.length; i++) {
+    //     if(filters.length){
+    //       for (var i = 0; i < filters.length; i++) {
 
-            // check for geography filter
-            if(filters[i].getType() === 0){
-              var ids = filters[i].value;
-              for (var j = 0; j < ids.length; j++) {
-                modal.find('[data="' + ids[j] + '"]').prop('checked', true);
-              }
-            }else{
-              modal.find('[data]').prop('checked', true);
-            }
-          }
-        }else{
-          modal.find('[data]').prop('checked', true);
-        }
-      }); // end on shown.bs.modal
+    //         // check for geography filter
+    //         if(filters[i].getType() === 0){
+    //           var ids = filters[i].value;
+    //           for (var j = 0; j < ids.length; j++) {
+    //             modal.find('[data="' + ids[j] + '"]').prop('checked', true);
+    //           }
+    //         }else{
+    //           modal.find('[data]').prop('checked', true);
+    //         }
+    //       }
+    //     }else{
+    //       modal.find('[data]').prop('checked', true);
+    //     }
+    //   }); // end on shown.bs.modal
 
-      // show the modal dialog
-      modal.modal('show');
+    //   // show the modal dialog
+    //   modal.modal('show');
 
-      // bind [removeAll] button
-      modal.find('[data="removeAll"]').click(function(){
-        me.getFilterManager().removeFilters();
+    //   // bind [removeAll] button
+    //   modal.find('[data="removeAll"]').click(function(){
+    //     me.getFilterManager().removeFilters();
 
-        console.log('reset filters to the default setting.');
-      });
+    //     console.log('reset filters to the default setting.');
+    //   });
 
-      // bind [ok] button
-      modal.find('[data="apply"]').click(function(){
+    //   // bind [ok] button
+    //   modal.find('[data="apply"]').click(function(){
 
-        // // get unchecked boxes, which we are going to hide
-        // var checkedProvs = modal.find('.province input:checked');
-        //
-        // var allProvs = $('[lid="' + node.getId() + '"]');
-        //
-        // // remove mchart divs for unchecked provinces
-        // for (var i = 0; i < checkedProvs.length; i++) {
-        //
-        //   console.log('Keep: ' + '[fid^="' + node.getScale() + '_' + $(checkedProvs[i]).attr('data') + '"]');
-        //   allProvs = allProvs.not('[fid^="' + node.getScale() + '_' + $(checkedProvs[i]).attr('data') + '"]');
-        // }
-        //
-        // // hide those mchart divs
-        // allProvs.parent().css('display', 'none');
+    //     // // get unchecked boxes, which we are going to hide
+    //     // var checkedProvs = modal.find('.province input:checked');
+    //     //
+    //     // var allProvs = $('[lid="' + node.getId() + '"]');
+    //     //
+    //     // // remove mchart divs for unchecked provinces
+    //     // for (var i = 0; i < checkedProvs.length; i++) {
+    //     //
+    //     //   console.log('Keep: ' + '[fid^="' + node.getScale() + '_' + $(checkedProvs[i]).attr('data') + '"]');
+    //     //   allProvs = allProvs.not('[fid^="' + node.getScale() + '_' + $(checkedProvs[i]).attr('data') + '"]');
+    //     // }
+    //     //
+    //     // // hide those mchart divs
+    //     // allProvs.parent().css('display', 'none');
 
-        // has filters???
-        console.log('check if filter settings are changed.');
+    //     // has filters???
+    //     console.log('check if filter settings are changed.');
 
-        // add the filter
-        var fm = me.getFilterManager();
-        var selected = modal.find('.province input:checked');
-        fm.addFilter(new Filter({
-          verb: '@',
-          value: selected.map(function(){return $(this).attr('data');})
-        }));
+    //     // add the filter
+    //     var fm = me.getFilterManager();
+    //     var selected = modal.find('.province input:checked');
+    //     fm.addFilter(new Filter({
+    //       verb: '@',
+    //       value: selected.map(function(){return $(this).attr('data');})
+    //     }));
 
-        // update the view
-        me.getNode().getMetaNode().updateView();
+    //     // update the view
+    //     me.getNode().getMetaNode().updateView();
 
-        // UI
-        if(selected.length == 4){
-          fm.setModified(false);
-          filter.css('color', 'black');
-        }else{
-          fm.setModified(true);
-          filter.css('color', 'red');
-        }
-        showModalMsgAuto('Filter applied.');
+    //     // UI
+    //     if(selected.length == 4){
+    //       fm.setModified(false);
+    //       filter.css('color', 'black');
+    //     }else{
+    //       fm.setModified(true);
+    //       filter.css('color', 'red');
+    //     }
+    //     showModalMsgAuto('Filter applied.');
 
-        // hide the modal dialog
-        modal.modal('hide');
-      });
+    //     // hide the modal dialog
+    //     modal.modal('hide');
+    //   });
 
-      // bind [cancel] button
-      modal.find('[data="cancel"]').click(function(){
+    //   // bind [cancel] button
+    //   modal.find('[data="cancel"]').click(function(){
 
-        // hide the modal dialog
-        modal.modal('hide');
-      });
+    //     // hide the modal dialog
+    //     modal.modal('hide');
+    //   });
 
-    }); // end filter.click()
+    // }); // end filter.click()
 
     var config = $('<div class="config"><i class="icon icon-cog"></i>Config</div>');
     config.click(function(e){
