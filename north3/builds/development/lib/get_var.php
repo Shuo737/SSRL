@@ -452,9 +452,10 @@ function build_sql_var_bar($conn, $table, $table_id, $table_field_main, $table_f
 			$sql .= $table_field_misc[$j] . " AS " . $propNames[2+$j] . "0,";
 		}
 
-		$sql .= "$table_field_main AS v0 FROM $table";
+		$sql .= "$table_field_main AS v0, CASE WHEN $table_field_main IS NOT NULL THEN RANK() over (order by $table_field_main desc nulls last) END AS r0 FROM $table";
+
 	}else{
-		$sql = "SELECT $table_id AS id, $table_field_main AS v0 FROM $table";
+		$sql = "SELECT $table_id AS id, $table_field_main AS v0, CASE WHEN $table_field_main IS NOT NULL THEN RANK() over (order by $table_field_main desc nulls last) END AS r0 FROM $table";
 	}
 
 	if(strpos($year_type,"text") === FALSE && strpos($year_type,"char") === FALSE)
@@ -475,9 +476,9 @@ function build_sql_var_bar($conn, $table, $table_id, $table_field_main, $table_f
 				$sql_ .= $table_field_misc[$j] . " AS " . $propNames[2+$j] . "$i,";
 			}
 
-			$sql_ .= "$table_field_main AS v$i FROM $table";
+			$sql_ .= "$table_field_main AS v$i, CASE WHEN $table_field_main IS NOT NULL THEN RANK() over (order by $table_field_main desc nulls last) END AS r$i FROM $table";
 		}else{
-			$sql_ = "SELECT $table_id AS id, $table_field_main AS v$i FROM $table";
+			$sql_ = "SELECT $table_id AS id, $table_field_main AS v$i, CASE WHEN $table_field_main IS NOT NULL THEN RANK() over (order by $table_field_main desc nulls last) END AS r$i FROM $table";
 		}
 
 		if(strpos($year_type,"text") === FALSE && strpos($year_type,"char") === FALSE){

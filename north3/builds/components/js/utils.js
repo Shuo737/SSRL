@@ -294,7 +294,7 @@ function setTooltipDivContent(args){
 			content = '<h3 class="place-title">';
 			content += data[0].place;
 			content += '</h3><h3 class="var-title">' + chart_config.getChart('bar').icon + ' ' + title + '</h3><div><table>';
-			content+='<tr><td class="caption">Year</td><td class="caption">Value</td><td class="caption">Rank</td></tr>';
+			content+='<tr><td class="caption">Year</td><td class="caption">Value</td></tr>';
 			for (i = 0; i < data.length; i++) {
 				if(data[i].data){ // pie  chart form
 					d = data[i].data.values[0];
@@ -314,7 +314,7 @@ function setTooltipDivContent(args){
 				}else{
 					content += '<tr>';
 				}
-				content += '<td>' + d.year + '</td><td>' + numberWithCommas(d.value) + (percent ? '%':'') + '</td><td>' + e.value + '</td></tr>';
+				content += '<td>' + d.year + '</td><td>' + numberWithCommas(d.value) + (percent ? '%':'') + '</td></tr>';
 			}
 			content += '</table><div class="footnote">' + rank_note;
 			if(hasNote){
