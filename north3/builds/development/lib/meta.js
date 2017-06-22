@@ -29,7 +29,7 @@
               "table1_fieldNames": ["1<i class='icon icon-person'></i>","2<i class='icon icon-person'></i>","3<i class='icon icon-person'></i>","4<i class='icon icon-person'></i>","5 <i class='icon icon-person'></i>",">5<i class='icon icon-person'></i>", "Color", "Comments"],
               "chart": "pie"
             },
-            "desc": ""
+            "desc": "Number of people per household"
           },
           {
             "id":"household_sz",
@@ -42,7 +42,7 @@
               "table1_fieldNames": ["Average Size", "Color", "Comments"],
               "chart": "bar"
             },
-            "desc": "Description for Average Household Size"
+            "desc": "Average number of people per household"
           },
           {
             "id":"household_private_no",
@@ -55,7 +55,7 @@
               "table1_fieldNames": ["Households", "Color", "Comments"],
               "chart": "bar"
             },
-            "desc": ""
+            "desc": "Number of private households"
           },
           {
             "id":"household_band",
@@ -68,7 +68,7 @@
               "table1_fieldNames": ["Band Size", "Color", "Comments"],
               "chart": "bar"
             },
-            "desc": "Description for Band Housing"
+            "desc": "Number of Band Housing"
           },
           {
             "id":"household_value",
@@ -81,7 +81,7 @@
               "table1_fieldNames": ["Average Value", "Color", "Comments"],
               "chart": "bar"
               },
-            "desc": ""
+            "desc": "Average value of Owned Household"
           },
           {
             "id": "household_dwelling_char",
@@ -104,7 +104,7 @@
                       "table1_fieldNames": ["Households #", "Color", "Comments"],
                       "chart": "bar"
                     },
-                    "desc": ""
+                    "desc": "Number of Private Dwellings"
                   },
                   {
                     "id":"household_dwelling_char_cnt_usu",
@@ -117,7 +117,7 @@
                       "table1_fieldNames": ["Households #", "Color", "Comments"],
                       "chart": "bar"
                     },
-                    "desc": ""
+                    "desc": "Number of Dwellings occupied by usual resident"
                   }
                 ]
               },
@@ -132,7 +132,7 @@
                   "table1_fieldNames": ["Owned", "Rented", "Color", "Comments"],
                   "chart": "pie"
                   },
-                "desc": "Description for dwelling tenure"
+                "desc": "Number of dwellings owned/rented"
               }
             ]
           },
@@ -152,7 +152,7 @@
                   "table1_fieldNames": ["Dwelling", "Color", "Comments"],
                   "chart": "bar"
                 },
-                "desc": "Number dwellings by period of construction"
+                "desc": "Number of dwellings by period of construction"
               },
               {
               "id":"household_prvt_char_cond",
@@ -201,7 +201,7 @@
               "table1_fieldNames": ["Subsidized %", "Color", "Comments"],
               "chart": "bar"
             },
-            "desc": ""
+            "desc": "Percentage of Tenants in subsidized housing"
           },
           {
             "id":"pop_census",
@@ -214,7 +214,7 @@
               "table1_fields": ["female","male","color","comment"],
               "table1_fieldNames": ["Female","Male","Color", "Comments"]
             },
-            "desc": "Population Census Data"
+            "desc": "Population by sex"
           },
           {
             "id":"pop_med_age",
@@ -227,7 +227,7 @@
               "table1_fields": ["median_age","color","comments"],
               "table1_fieldNames": ["Median Age","Color", "Comments"]
             },
-            "desc": "Population Median Age Data"
+            "desc": "Median age of the population"
           },
           {
             "id":"pop_origin",
@@ -245,7 +245,7 @@
                   "table1_fields": ["ab","non_ab","color","comments"],
                   "table1_fieldNames": ["Aboriginal Population","Non-Aboriginal Population","Color", "Comments"]
                   },
-                  "desc": "Aboriginal and Non-Aboriginal Population Data"
+                  "desc": "Aboriginal/Non-Aboriginal"
                 },
                 {
                 "id":"pop_origin_first_metis",
@@ -258,7 +258,7 @@
                   "table1_fields": ["first","metis","color","comments"],
                   "table1_fieldNames": ["First Nation Population","Metis Population","Color", "Comments"]
                   },
-                  "desc": "First Nation and Metis Population"
+                  "desc": "First Nations/Métis"
                 },
                 {
                 "id":"pop_origin_status_indian",
@@ -271,7 +271,7 @@
                   "table1_fields": ["reg","non_reg","color","comments"],
                   "table1_fieldNames": ["Status Indian","Non-Status Indian","Color", "Comments"]
                   },
-                  "desc": "Status Indians include Registered or Treaty Indians. "
+                  "desc": "Status/Non-Status Indians"
                 }
             ]
           },
@@ -287,7 +287,7 @@
               "table1_fieldNames": ["1<sup>st</sup> Generation %","2<sup>nd</sup> Generation %","3<sup>rd</sup> Generation %","Color", "Comments"],
               "percent": true
             },
-            "desc": "Generation Status in Canada Population 15+"
+            "desc": "Generation Status"
           }
         ]
       },
@@ -308,7 +308,7 @@
               "table1_fields": ["female","male","color","comments"],
               "table1_fieldNames": ["Female Lone Parent Families","Male Lone Parent Families","Color", "Comments"]
             },
-            "desc": "Number of Lone Parent Families by Gender"
+            "desc": "Female/Male Lone Parent Families"
           },
           {
             "id":"family_private_household",
@@ -321,7 +321,7 @@
               "table1_fields": ["private","color","comments"],
               "table1_fieldNames": ["Number of Census Families in Private Household","Color", "Comments"]
             },
-            "desc": "Number of Census Families in Private Household"
+            "desc": "Number of families in a private household"
           },
           {
             "id":"family_dependency_ratio",
@@ -334,7 +334,7 @@
               "table1_fields": ["age0_19","age20_64","age65_","color","comments"],
               "table1_fieldNames": ["Age 0-19","Age 20-64","Age 65+","Color", "Comments"]
             },
-            "desc": ""
+            "desc": "Dependency Ratios populations (in the description, please add the following “a measure showing the number of dependents, or those not typically in the labour force (i.e. those aged 0 to 14 and over the age of 65) and those typically in the labour force (ages 15 to 64)."
           }
         ]
       },
@@ -355,7 +355,7 @@
               "table1_fields": ["en","fr","other","color","comments"],
               "table1_fieldNames": ["English","French","Aboriginal/Other","Color", "Comments"]
             },
-            "desc": ""
+            "desc": "Mother Tongue (The first language learned at home in childhood and still understood by the individual)"
           },
           {
             "id":"lan_home",
@@ -368,7 +368,7 @@
               "table1_fields": ["en","fr","other","color","comments"],
               "table1_fieldNames": ["English","French","Aboriginal/Other","Color", "Comments"]
             },
-            "desc": ""
+            "desc": "Home Language (language spoken most often or on a regular basis at home)"
           },
           {
             "id":"lan_vitality",
@@ -381,7 +381,7 @@
               "table1_fields": ["en","fr","ab","color","comments"],
               "table1_fieldNames": ["English","French","Aboriginal","Color", "Comments"]
             },
-            "desc": "Language Vitality Indicator = Home Language/Mother Tongue"
+            "desc": "Language Vitality Indicator"
           },
           {
             "id":"lan_work",
@@ -399,7 +399,7 @@
                   "table1_fields": ["prc_ab","color","comments"],
                   "table1_fieldNames": ["Aboriginal (%)","Color", "Comments"]
                 },
-                "desc": "Percentage of Aboriginal Language Used at Work"
+                "desc": "Language used at work "
               },
               {
                 "id":"lan_work_non_ab",
@@ -435,7 +435,7 @@
               "table1_fields": ["employed","unemployed","non_labour","color","comments"],
               "table1_fieldNames": ["Employed","Unemployed","Not In the Labour Force","Color", "Comments"]
             },
-            "desc": "Census 2011 and 2006 data were collected from population 15 years and over; Census 2001 data were collected from population 20-64 years and over (<i>sic<i>)"
+            "desc": "Employed/Unemployed/Not in Labour Force"
           },
           {
             "id":"work_census_labour_2010",
@@ -453,7 +453,7 @@
                   "table1_fields": ["full_time","part_time","not_worked","color","comments"],
                   "table1_fieldNames": ["Employed Full-Time","Employed Part-Time","Did Not Work","Color", "Comments"]
                 },
-                "desc": ""
+                "desc": "Employed full-time/part-time/did not work"
               },
               {
                 "id":"work_census_labour_2010_avg_weeks",
@@ -466,7 +466,7 @@
                   "table1_fields": ["ave_week","color","comments"],
                   "table1_fieldNames": ["Average Weeks Worked","Color", "Comments"]
                 },
-                "desc": "Average weeks worked (level of full work place participation)"
+                "desc": "Average weeks worked"
               }
             ]
           },
@@ -481,7 +481,7 @@
               "table1_fields": ["a","b","c","d","e","f","g","h","i","j","na","color","comments"],
               "table1_fieldNames": ["A","B","C","D","E","F","G","H","I","J","N\/A","Color", "Comments"]
             },
-            "desc": "<ul><li>A:Management</li><li>B:Business/Finance</li><li>C:Sciences</li><li>D:Health</li><li>E:Educ. Gov't</li><li>F:Arts Culture</li><li>G:Sales/Services</li><li>H:Trades, Transport</li><li>I:Primary</li><li>J:Manufacturing/Utilities</li><li>N\/A:Not Applicable</li></ul>"
+            "desc": "Employment by occupation sectors<br><ul><li>A:Management</li><li>B:Business/Finance</li><li>C:Sciences</li><li>D:Health</li><li>E:Educ. Gov't</li><li>F:Arts Culture</li><li>G:Sales/Services</li><li>H:Trades, Transport</li><li>I:Primary</li><li>J:Manufacturing/Utilities</li><li>N\/A:Not Applicable</li></ul>"
           },
           {
             "id":"work_census_emp_industry",
@@ -512,7 +512,7 @@
                   "table1_fields": ["agri","mining","utilities","constr","mfg","wholesale","retail","trans_ware","cultural","finance","estate","science","mgmt","admin","education","health","recreation","accom","public","other","na","color","comments"],
                   "table1_fieldNames": ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","N\/A","Color", "Comments"]
                 },
-                "desc": "<ul><li>A:Agriculture and Other resource-based Industries</li><li>B:Mining Oil & Gas</li><li>C:utilities</li><li>D:Construction</li><li>E:Manufacturing</li><li>F:Wholesale trade</li><li>G:Retail trade</li><li>H:Transportation & Warehousing</li><li>I:Information and Cultural Industies</li><li>J:Finance and real estate</li><li>K:Real Estate, Rental and Leasing</li><li>L:Professional, Sceince & Technical services</li><li>M:Management of Companies</li><li>N:Admin Support, waste and Remedial Services</li><li>O:Educational Services</li><li>P:Health and Social Assistance</li><li>Q:Arts and Entertainment & Recreation</li><li>R:Accommodation and Food Services</li><li>S:Public Administration</li><li>T:Other Services</li><li>N\/A:Not Applicable</li></ul>"
+                "desc": "Employment by industry <br><ul><li>A:Agriculture and Other resource-based Industries</li><li>B:Mining Oil & Gas</li><li>C:utilities</li><li>D:Construction</li><li>E:Manufacturing</li><li>F:Wholesale trade</li><li>G:Retail trade</li><li>H:Transportation & Warehousing</li><li>I:Information and Cultural Industies</li><li>J:Finance and real estate</li><li>K:Real Estate, Rental and Leasing</li><li>L:Professional, Sceince & Technical services</li><li>M:Management of Companies</li><li>N:Admin Support, waste and Remedial Services</li><li>O:Educational Services</li><li>P:Health and Social Assistance</li><li>Q:Arts and Entertainment & Recreation</li><li>R:Accommodation and Food Services</li><li>S:Public Administration</li><li>T:Other Services</li><li>N\/A:Not Applicable</li></ul>"
               }
             ]
           }
@@ -535,7 +535,7 @@
               "table1_fields": ["no_degree","high","trade","college","univ_below","univ_above","color","comments"],
               "table1_fieldNames": ["A","B","C","D","E","F","Color", "Comments"]
             },
-            "desc": "<ul><li>A:No certificate, diploma or degree</li><li>B:High school certificate or equivalent</li><li>C:Apprenticeship or trades certificate or diploma</li><li>D:College, CEGEP or other non-university certificate or diploma</li><li>E:University certificate or diploma below bachelor level</li><li>F:University certificate or degree at bachelor's level or above</li></ul>Census 2011 and 2006 were collected from age group 25-64, and census 2001 from age group 34-64. Original values are all in percentages, from which this service calculated absolute values."
+            "desc": "Level of Education <br><ul><li>A:No certificate, diploma or degree</li><li>B:High school certificate or equivalent</li><li>C:Apprenticeship or trades certificate or diploma</li><li>D:College, CEGEP or other non-university certificate or diploma</li><li>E:University certificate or diploma below bachelor level</li><li>F:University certificate or degree at bachelor's level or above</li></ul>Census 2011 and 2006 were collected from age group 25-64, and census 2001 from age group 34-64. Original values are all in percentages, from which this service calculated absolute values."
           }
         ]
       },
@@ -556,7 +556,7 @@
               "table1_fields": ["all_median","color","comments"],
               "table1_fieldNames": ["Median Income","Color", "Comments"]
             },
-            "desc": "Census Median Income All Private Households in Dollars. "
+            "desc": "Median income"
           },
           {
             "id":"income_compose",
@@ -569,7 +569,7 @@
               "table1_fields": ["prc_market","prc_earned","prc_gov","prc_other","color","comments"],
               "table1_fieldNames": ["Market Income","Earned Income","Gov't Transfer","Other Money/ Investment","Color", "Comments"]
             },
-            "desc": "Composition of Individual's Incomes as Percentages. "
+            "desc": "Income composition"
           },
           {
             "id":"imcome_y15_",
@@ -587,7 +587,7 @@
                   "table1_fields": ["y15_income","color","comments"],
                   "table1_fieldNames": ["Persons with Incomes","Color", "Comments"]
                 },
-              "desc": ""
+              "desc": "Number of persons with income"
               },
               {
                 "id":"income_y15_median",
@@ -600,7 +600,7 @@
                   "table1_fields": ["y15_median","color","comments"],
                   "table1_fieldNames": ["Median Income","Color", "Comments"]
                 },
-              "desc": "Median Income Individual with Income."
+              "desc": "Median Income"
               }
             ]
           }

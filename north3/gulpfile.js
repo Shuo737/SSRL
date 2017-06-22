@@ -50,6 +50,7 @@ var jsSources = [
   // libraries
   'builds/components/js/L.heatmap.js',
   'builds/components/js/_jquery.cookie.js',
+  'builds/components/js/_w2ui-1.5.rc1.min.js',
 
   // classes, order here is important
   'builds/components/js/initUi.js',

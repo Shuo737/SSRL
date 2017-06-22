@@ -26,8 +26,8 @@
 
   <link rel="stylesheet" href="css/main.css">
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="w2ui-1.5.rc1.min.js"></script>
-  <link rel="stylesheet" href="w2ui-1.5.rc1.min.css" />
+<!--   <script type="text/javascript" src="w2ui-1.5.rc1.min.js"></script>
+  <link rel="stylesheet" href="w2ui-1.5.rc1.min.css" /> -->
   <script type="text/javascript">
 	 var preload_var = <?php echo "'$var'"; ?>;
   </script>
