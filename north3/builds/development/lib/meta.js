@@ -334,7 +334,7 @@
               "table1_fields": ["age0_19","age20_64","age65_","color","comments"],
               "table1_fieldNames": ["Age 0-19","Age 20-64","Age 65+","Color", "Comments"]
             },
-            "desc": "Dependency Ratios populations (in the description, please add the following “a measure showing the number of dependents, or those not typically in the labour force (i.e. those aged 0 to 14 and over the age of 65) and those typically in the labour force (ages 15 to 64)."
+            "desc": "Dependency Ratios populations (a measure showing the number of dependents, or those not typically in the labour force (i.e. those aged 0 to 14 and over the age of 65) and those typically in the labour force (ages 15 to 64)."
           }
         ]
       },
