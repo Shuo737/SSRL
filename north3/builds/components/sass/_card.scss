@@ -1,0 +1,212 @@
+.card-container{
+  display: none;
+  position: absolute!important;
+  right: 40px;
+  // padding: 5px;
+  width: $card_container_width;
+  height: $card_container_height;
+  border-radius: 4px;
+  box-shadow: 0 0 3px black;
+  background: rgba(0, 0, 0, .4);
+}
+.card-container > h3{
+  cursor: pointer;
+  text-align: center;
+  // color: #fff;
+  white-space: nowrap;
+  padding: 5px 30px 5px 5px;
+  margin: 0 0 5px 0;
+  // border-bottom: 1px solid;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #bfbfbf;
+  border-radius: 5px 5px 0 0;
+}
+.card-container > h3 > .control{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  .maximize, .minimize{
+    cursor: pointer;
+  };
+  .maximize{
+    display: none;
+  }
+}
+.card-container .cards{
+  position: relative;
+  text-align: center;
+  overflow-y: scroll;
+  padding: 5px 0;
+}
+.card-container .card{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 3px;
+  border-radius: 4px;
+  border-spacing: 10px;
+  text-align: left;
+  /*opacity:0.9;*/
+  max-width: 200px;
+  filter: drop-shadow(1px 1px 3px #000);
+	font-family: 'Roboto Condensed', sans-serif;
+  font-size: .9em;
+	transition: all 0.5s cubic-bezier(0,0,0,1.5);
+	color: #000;
+  padding: 0;
+	background: linear-gradient(to bottom, #ffffff 0%, #DAECC7 100%);
+}
+
+.card-container .card .mask{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  transition: opacity 0.3s;
+  border-radius: 4px;
+
+  /* z-index: 1; */
+  background-color: rgba(255,0,0,.5);
+}
+
+#layout > .card .actions, .card-container .card .actions{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  transition: opacity 0.3s;
+  text-align: center;
+  border-radius: 4px;
+
+  /* z-index: 1; */
+  background-color: rgba(0,0,0,.7);
+}
+
+#layout > .card .actions .btn-group, .card-container .card .actions .btn-group{
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.card-container .card table{
+	width: 100%;
+}
+.card-container .card tr:nth-child(odd) {
+  background: #D4E6BF;
+}
+
+.card-container .card .place-title{
+  background-color: #79AD44;
+  font-size: 14px;
+  color: #fff;
+	font-weight: bold;
+	white-space: nowrap;
+  padding: 5px;
+  border-radius: 4px 4px 0 0;
+  text-align: center;
+  margin: 0;
+}
+.card-container .card .var-title{
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.card-container .card .var-title + div{
+  padding: 5px;
+  font-size: 10px;
+}
+
+.card-container footer{
+  box-shadow: none;
+  border-top: 1px solid #555 !important;
+  text-align: center;
+  padding-top: 5px;
+  background: rgba(0,0,0,.5);
+  border-radius: 0 0 5px 5px;
+}
+
+.card-container .card .footnote{
+	padding: 0.5em 0.5em 0 0.5em;
+	border-top: 1px solid #aaa;
+	font-size: 0.9em;
+	color: #888;
+}
+
+.card-container footer > .container > *{
+  margin-right: 2px;
+}
+
+#layout > .card{
+  display: block;
+  z-index: 1;
+  position: absolute;
+  border-radius: 4px;
+  border-spacing: 10px;
+  text-align: left;
+  /*opacity:0.9;*/
+  // max-width: 200px;
+  filter: drop-shadow(1px 1px 3px #000);
+	font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.7em;
+	color: #000;
+  padding: 0;
+	background: linear-gradient(to bottom, #ffffff 0%, #DAECC7 100%);
+}
+#layout > .card table{
+	width: 100%;
+}
+
+#layout > .card .actions{
+display: none;
+}
+
+#layout > .card tr:nth-child(odd) {
+  background: #D4E6BF;
+}
+
+#layout > .card tr:nth-child(odd) {
+  background: #D4E6BF;
+}
+
+#layout > .card .place-title{
+  background-color: #79AD44;
+  font-size: 1.2em;
+  color: #fff;
+	font-weight: bold;
+	white-space: nowrap;
+  padding: 5px;
+  border-radius: 4px 4px 0 0;
+  text-align: center;
+  margin: 0;
+  cursor: move;
+}
+#layout > .card .var-title{
+  font-size: 1.2em;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+#layout > .card .var-title + div{
+  padding: 5px;
+  // font-size: 10px;
+}
+
+#layout > .card .footnote{
+	margin-top: 0.5em;
+	padding-top: 0.5em;
+	border-top: 1px solid #aaa;
+	// font-size: 0.9em;
+	color: #888;
+}
+
+#lead{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  // transition: opacity 1s;
+  transform-origin: left center 0px;
+}

@@ -1,0 +1,249 @@
+.leaflet-bottom.leaflet-right{
+	overflow-y: scroll;
+	padding: 15px 5px 5px 10px; // 15px and 10px are enough to avoid shadows being chopped off at its top and left  borders
+	pointer-events: all;
+}
+.legend-control{
+	/*opacity: 0.9;*/
+  background: white;
+  border-radius: 5px 0 5px 5px;
+  /*padding: 5px;*/
+  filter: drop-shadow(0px 0px 5px #000);
+	font-family: "Roboto Condensed","Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 14px;
+	margin: 15px 0 15px 0!important;
+}
+
+.legend-control a{
+  color: #333!important;
+}
+
+.legend-control .title{
+  // display: block;
+  // width: 100%;
+	// max-width: 300px;
+  text-align: center;
+  // border-bottom: 1px solid #888;
+	border-radius: 5px 0 0 0;
+  // font-weight: bold;
+	color: white;
+	padding: 3px 0;
+}
+
+.legend-control .title, .legend-control .control-box {
+  background: #79AD44;
+}
+
+.legend-control.shrink .title, .legend-control.shrink .control-box {
+  background: white;
+}
+
+.legend-control .node-content{
+	padding: 5px;
+}
+
+.legend-control.shrink .node-content,
+.legend-control.shrink .mask div,
+.legend-control.shrink .footer {
+	display: none;
+}
+
+.legend-control.shrink .title{
+	padding: 5px 10px;
+	border-radius: 5px 0 5px 5px;
+	color: black;
+}
+
+.legend-control .scale{
+	border-radius: 5px 0 0 0;
+  padding: 0 5px;
+  border-right: 1px solid #adadad;
+}
+.legend-control .mask{
+  display: none;
+  cursor: not-allowed;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.7);
+  z-index: 1;
+  color: #d6d6d6;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 5px 0 5px 5px;
+}
+.legend-control .mask div{
+  transform: translate(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  white-space: nowrap;
+}
+.legend-control .control-box{
+	position: absolute;
+	display: inline-block;
+	top: -20px;
+	right: 0;
+	color: #545454;
+	border-radius: 5px 5px 0 0;
+}
+.legend-control .control-box [data]{
+  cursor: pointer;
+}
+
+.legend-control .nav-tabs > li.active{
+  // font-weight: bold;
+}
+.legend-control .nav-tabs > li.active a{
+  color: #9c0000!important;
+  background: #f9eec3;
+}
+.legend-control .nav-tabs > li >a {
+	padding: 0px 5px 0px 0px;
+}
+
+.legend-control .nav > li{
+	cursor: pointer;
+}
+.legend-control .nav > li:hover{
+	color: red;
+}
+
+.legend-control .footer{
+  border-top: 1px dashed #888;
+}
+
+.legend-control .footer > div:hover, .legend-control .icon-play:hover, .legend-control .icon-pause:hover{
+  color: green;
+}
+.legend-control .footer > div, .legend-control .icon-play, .legend-control .icon-pause{
+  display: inline-block;
+  padding: 0 5px;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+.legend-control .play{
+  margin-left: 5px;
+}
+
+.legend-control .slider_bg{
+	// height: 15px;
+	display:inline-block;
+}
+
+.legend-control [data="bar"] .slider_bg.year div{
+	border: 1px solid black;
+}
+.legend-control [data="pie"] .slider_bg.patch div:hover,
+.legend-control [data="bar"] .slider_bg.year div:hover{
+	color: red;
+  background-image: linear-gradient(to bottom, $hatch_color1 0%, $hatch_color2 100%)!important;
+}
+.legend-control .slider_bg div:not(first-child) {
+    margin-left: -1px;
+}
+
+.legend-control .slider_bg div{
+	position: relative;
+	cursor: pointer;
+	float: right;
+	height: 1em;
+	/*width: 30px;*/
+	margin: 0;
+	box-sizing: border-box;;
+	transition: opacity .5s ease-in-out;
+}
+
+.legend-control .slider_bg span{
+	margin-top: 1.5em;
+	// color: #000;
+	/* text-shadow: 0 1px 2px black,1px 0 2px black,0 0 2px black, 1px 1px 2px black; */
+	padding: 0 5px 0 5px;
+	font-size: 0.8em;
+	position: relative;
+	line-height: 100%;
+  display: inline-block;
+}
+
+.legend-control .slider_bg.year div.active span, .slider_bg div.active span{
+	font-weight: bold;
+	/* animation: blinker 2s linear infinite; */
+}
+
+.legend-control .content [data] > div{
+  margin: 5px 5px 9px 5px;
+}
+
+.legend-control .paint{
+	cursor: pointer;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.legend-control .download{
+  font-weight: bold;
+}
+
+.legend-control .slider.choropleth .slider_bg div.active{
+	background-image: url('../img/visibility_chor.png')!important;
+}
+
+.legend-control .slider_bg div.active{
+  background-image: url('../img/visibility1.png')!important;
+  background-size: 15px 13px!important;
+  background-repeat: no-repeat!important;
+  background-position: center!important;
+}
+
+.legend-control .slider_bg.year div.active{
+	background-image: url('../img/visibility_xj.png')!important;
+}
+
+.legend-control .slider_bg div.active2{
+  background-image: url('../img/heat5.png')!important;
+  background-size: 15px 13px!important;
+  background-repeat: no-repeat!important;
+  background-position: center!important;
+}
+
+.legend-control .sub-control{
+  margin: 5px 0 15px 0;
+	display: block;
+}
+
+.legend-control .control{
+	/*font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;*/
+	/*font-size: .9em;*/
+	// margin: 5px;
+/*	padding: 5px;
+	box-shadow: 0 0 3px #000;
+	background: rgba(255,255,255,0.8);
+	border-radius: 5px;*/
+  user-select: none;
+}
+.control span.caption{
+	color: #888;
+	width: 42px!important;
+  display: inline-block;
+}
+
+.sub-control.title span {
+	font-weight: bold;
+}
+
+.legend-control .filter.applied {
+  color: red
+}
+
+.control .icon-cancel-circled{
+  position: absolute;
+	float: right;
+  font-size: 1.2em;
+  top: -7px;
+  right: -11px;
+  margin: 0;
+  text-shadow: 0 0 5px #838383;
+}
