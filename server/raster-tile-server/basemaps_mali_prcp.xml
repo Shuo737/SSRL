@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+    <Style name="style1" opacity="0.7">
+        <Rule>
+            <RasterSymbolizer>
+                <RasterColorizer default-mode="discrete" default-color="rgba(0,0,0,0)" epsilon="1.192093e-07">
+					<stop value="0" color="#d3e5e8" mode="inherit"/>
+					<stop value="52" color="#c5dae0" mode="inherit"/>
+					<stop value="112" color="#b8ced9" mode="inherit"/>
+					<stop value="181" color="#aec6d4" mode="inherit"/>
+					<stop value="260" color="#9fbbcc" mode="inherit"/>
+					<stop value="349" color="#93b1c4" mode="inherit"/>
+					<stop value="444" color="#88a8bf" mode="inherit"/>
+					<stop value="535" color="#7d9fb8" mode="inherit"/>
+					<stop value="700" color="#7297b3" mode="inherit"/>
+					<stop value="1030" color="#658cab" mode="inherit"/>
+					<stop value="1350" color="#5b84a6" mode="inherit"/>
+					<stop value="1670" color="#4f7b9e" mode="inherit"/>
+					<stop value="1990" color="#457399" mode="inherit"/>
+					<stop value="2310" color="#396b91" mode="inherit"/>
+					<stop value="2629" color="#2e648c" mode="inherit"/>
+					<stop value="3912" />
+                </RasterColorizer>
+            </RasterSymbolizer>
+        </Rule>
+    </Style>
+    <Layer name="elev" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+        <StyleName>style1</StyleName>
+        <Datasource>
+            <Parameter name="band">1</Parameter>
+            <Parameter name="file">..\data\basemaps_mali_prcp.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+        </Datasource>
+    </Layer>
+</Map>

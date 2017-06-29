@@ -1,0 +1,182 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+#layout {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  bottom: 0;
+  // border: 1px solid black;
+  overflow: hidden;
+}
+
+.version {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: #aaa;
+  z-index: 1031;
+  font-size: .8em;
+}
+
+/* tree view control */
+#tree-wrapper {
+  width: 250px;
+  position: absolute;
+  background: white;
+  z-index: 1;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 1px 0px 1px #888;
+}
+
+#tree-wrapper > .title{
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #E5E9ED 100%);
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 2px #909090;
+}
+
+#tree {
+  // top: 1.2em;
+  // bottom: 35px;
+  // width: 250px;
+  overflow: scroll;
+}
+
+#tree .jstree-themeicon-custom{
+  background-size: 1.5em 1.5em!important;
+}
+
+#tree .list-group{
+  height: 100%;
+  background: white;
+  border-radius: initial;
+  margin-bottom: 0;
+  overflow: scroll;
+}
+#tree .list-group-item:first-child,
+#tree .list-group-item:last-child {
+  border-radius: initial;
+}
+
+footer {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background: #fafafa;
+}
+
+/* customizations for small screen (mobile devices) */
+@media only screen and (max-width: 500px) {
+	/* hide the top navigation bar and move other items (map and left side tree) in the layout to the top */
+	#layout nav {
+		display: none;
+	}
+	#layout {
+		top: 0px;
+	}
+	
+	/* the width below which the footer will be transparent - this does not effect buttons in the footer */
+	footer {
+		background: transparent;
+	}
+}
+
+footer .status {
+  line-height: 35px;
+  font-size: .9em;
+
+}
+footer .status > span {
+  padding-right: 5px;
+}
+footer .status .busy{
+  opacity: 0;
+}
+
+// footer .status .busy.has-msg > span{
+//   display: inline-block;
+// }
+// footer .status .busy.has-no-msg > span{
+//   display: none;
+// }
+footer .right {
+  float: right;
+}
+footer .dropdown-menu > li > a {
+  padding-left: 20px!important;
+}
+
+// bookmarks
+footer .dropdown-menu .divider{
+  margin: 2px 0;
+}
+footer .dropdown-menu{
+  padding: 2px;
+}
+footer .dropdown-menu > li.continent .icon {
+  color: #fdfdfd;
+}
+footer .dropdown-menu > li.continent, footer .dropdown-menu > li.continent > a {
+  background: #afd6a1;
+}
+
+footer .dropdown-menu > li.country, footer .dropdown-menu > li.country > a {
+  background: #eafbe4;
+  color: #7f7f7f;
+}
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.btn-transparent {
+  background: transparent;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0!important;
+}
+
+.bookmark ul .icon {
+  position: absolute;
+  line-height: 1.42857143;
+  margin-top: 3px;
+  margin-left: 0;
+}
+
+.bookmark a, .base-layer label{
+  cursor: pointer;
+}
+.bookmark li:hover a, .base-layer li:hover label{
+  color: $menu_highlight_color2;
+}
+.bookmark li:hover, .base-layer li:hover {
+  color: $menu_highlight_color;
+}
+
+.modal > div {
+  max-width: 500px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%)!important;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%!important;
+    padding: 0!important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%!important;
+    padding: 0!important;
+  }
+}

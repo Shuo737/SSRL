@@ -1,0 +1,402 @@
+[
+  {
+    "id": "project1",
+    "text": "INuWaM",
+    "country": [
+      {
+        "id": "_",
+        "point": [{
+          "id": "proj1_research_locations",
+          "text": "Research Locations"
+          },
+          {
+            "id": "proj1_data_Boukombe",
+            "text": "Boukombe"
+          },
+          {
+            "id": "proj1_data_RWH",
+            "text": "RWH"
+          },
+          {
+            "id": "proj1_data_fertile",
+            "text": "Fertile/Degraded (2013)"
+          },
+          {
+            "id": "proj1_data_RPT",
+            "text": "RPT 2013"
+          },
+          {
+            "id": "proj1_data_KoumagouB",
+            "text": "KoumagouB"
+          },
+          {
+            "id": "proj1_data_Sadore1998",
+            "text": "Sadore (1998~2012)"
+          },
+          {
+            "id": "proj1_data_Sadore2013",
+            "text": "Sadore (2013)"
+          },
+          {
+            "id": "proj1_data_Saria",
+            "text": "Saria"
+          }
+        ],
+        "line": [],
+        "polygon": [],
+        "raster": []
+      }
+    ]
+  },
+  {
+    "id": "project2",
+    "text": "MicroVeg",
+    "country": [
+      {
+        "id": "_",
+        "point": [{
+          "id": "beninResearchLocations",
+          "text": "Benin Research Locations"
+          },
+          {
+            "id": "nigeriaResearchLocations",
+            "text": "Nigeria Research Locations"
+            }],
+        "line": [],
+        "polygon": [],
+        "raster": []
+      }
+    ]
+  },
+  {
+    "id": "basemaps",
+    "text": "Base Maps",
+    "country": [
+      {
+        "id": "_",
+        "point": [],
+        "line": [],
+        "polygon": [{
+          "id": "sahel",
+          "text": "Sahel Region"
+          }],
+        "raster": []
+      },
+      {
+        "id": "Benin",
+        "text": "Benin",
+        "point": [
+          {
+            "id": "population",
+            "text": "Population"
+          },
+          {
+            "id": "airports",
+            "text": "Airports"
+          }],
+        "line": [
+          {
+            "id": "rivers",
+            "text": "Rivers"
+          },
+          {
+            "id": "railway",
+            "text": "Railway"
+          },
+          {
+            "id": "roads",
+            "text": "Roads"
+          }
+        ],
+        "polygon": [
+          {
+            "id": "soil",
+            "text": "Soil"
+          },
+          {
+            "id": "adm0",
+            "text": "Admin 0"
+          },
+          {
+            "id": "adm1",
+            "text": "Admin 1"
+          },
+          {
+            "id": "adm2",
+            "text": "Admin 2"
+          },
+          {
+            "id": "lakes",
+            "text": "Lakes"
+          }
+        ],
+        "raster": [
+          {
+            "id": "elev",
+            "text": "Elevation"
+          },
+          {
+            "id": "temp",
+            "text": "Temperature"
+          },
+          {
+            "id": "prcp",
+            "text": "Precipitation"
+          }
+        ]
+      },
+      {
+        "id": "BurkinaFaso",
+        "text": "Burkina Faso",
+        "point": [
+          {
+            "id": "population",
+            "text": "Population"
+          },
+          {
+            "id": "airports",
+            "text": "Airports"
+          }],
+        "line": [
+          {
+            "id": "rivers",
+            "text": "Rivers"
+          },
+          {
+            "id": "railway",
+            "text": "Railway"
+          },
+          {
+            "id": "roads",
+            "text": "Roads"
+          }
+        ],
+        "polygon": [
+          {
+            "id": "soil",
+            "text": "Soil"
+          },
+          {
+            "id": "adm0",
+            "text": "Admin 0"
+          },
+          {
+            "id": "adm1",
+            "text": "Admin 1"
+          },
+          {
+            "id": "adm2",
+            "text": "Admin 2"
+          },
+          {
+            "id": "lakes",
+            "text": "Lakes"
+          }
+        ],
+        "raster": [
+          {
+            "id": "elev",
+            "text": "Elevation"
+          },
+          {
+            "id": "temp",
+            "text": "Temperature"
+          },
+          {
+            "id": "prcp",
+            "text": "Precipitation"
+          }
+        ]
+      },
+      {
+        "id": "Mali",
+        "text": "Mali",
+        "point": [
+          {
+            "id": "population",
+            "text": "Population"
+          },
+          {
+            "id": "airports",
+            "text": "Airports"
+          }],
+        "line": [
+          {
+            "id": "rivers",
+            "text": "Rivers"
+          },
+          {
+            "id": "railway",
+            "text": "Railway"
+          },
+          {
+            "id": "roads",
+            "text": "Roads"
+          }
+        ],
+        "polygon": [
+          {
+            "id": "soil",
+            "text": "Soil"
+          },
+          {
+            "id": "adm0",
+            "text": "Admin 0"
+          },
+          {
+            "id": "adm1",
+            "text": "Admin 1"
+          },
+          {
+            "id": "adm2",
+            "text": "Admin 2"
+          },
+          {
+            "id": "lakes",
+            "text": "Lakes"
+          }
+        ],
+        "raster": [
+          {
+            "id": "elev",
+            "text": "Elevation"
+          },
+          {
+            "id": "temp",
+            "text": "Temperature"
+          },
+          {
+            "id": "prcp",
+            "text": "Precipitation"
+          }
+        ]
+      },
+      {
+        "id": "Niger",
+        "text": "Niger",
+        "point": [
+          {
+            "id": "population",
+            "text": "Population"
+          },
+          {
+            "id": "airports",
+            "text": "Airports"
+          }],
+        "line": [
+          {
+            "id": "rivers",
+            "text": "Rivers"
+          },
+          {
+            "id": "railway",
+            "text": "Railway"
+          },
+          {
+            "id": "roads",
+            "text": "Roads"
+          }
+        ],
+        "polygon": [
+          {
+            "id": "soil",
+            "text": "Soil"
+          },
+          {
+            "id": "adm0",
+            "text": "Admin 0"
+          },
+          {
+            "id": "adm1",
+            "text": "Admin 1"
+          },
+          {
+            "id": "adm2",
+            "text": "Admin 2"
+          },
+          {
+            "id": "lakes",
+            "text": "Lakes"
+          }
+        ],
+        "raster": [
+          {
+            "id": "elev",
+            "text": "Elevation"
+          },
+          {
+            "id": "temp",
+            "text": "Temperature"
+          },
+          {
+            "id": "prcp",
+            "text": "Precipitation"
+          }
+        ]
+      },
+      {
+        "id": "Nigeria",
+        "text": "Nigeria",
+        "point": [
+          {
+            "id": "population",
+            "text": "Population"
+          },
+          {
+            "id": "airports",
+            "text": "Airports"
+          }],
+        "line": [
+          {
+            "id": "rivers",
+            "text": "Rivers"
+          },
+          {
+            "id": "railway",
+            "text": "Railway"
+          },
+          {
+            "id": "roads",
+            "text": "Roads"
+          }
+        ],
+        "polygon": [
+          {
+            "id": "soil",
+            "text": "Soil"
+          },
+          {
+            "id": "adm0",
+            "text": "Admin 0"
+          },
+          {
+            "id": "adm1",
+            "text": "Admin 1"
+          },
+          {
+            "id": "adm2",
+            "text": "Admin 2"
+          },
+          {
+            "id": "lakes",
+            "text": "Lakes"
+          }
+        ],
+        "raster": [
+          {
+            "id": "elev",
+            "text": "Elevation"
+          },
+          {
+            "id": "temp",
+            "text": "Temperature"
+          },
+          {
+            "id": "prcp",
+            "text": "Precipitation"
+          }
+        ]
+      }
+    ]
+  }
+]

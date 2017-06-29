@@ -1,0 +1,30 @@
+#tree li[role="treeitem"] {
+	overflow: hidden;
+}
+
+#tree .jstree-anchor{
+	width: 100%;
+}
+
+#tree .jstree-anchor {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+#tree .jstree-anchor:hover {
+	/*background-color: rgb(199,222,239);*/
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+#tree .jstree-anchor.data {
+	// background-color: rgba(199,222,239,.5);
+}
+#tree .jstree-anchor.data:hover {
+	background-color: rgb(199,222,239);
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.jstree-node:not(.jstree-leaf) > i:hover {
+  background-color: rgba(0,0,0,.3);
+  border-radius: 50%;
+}

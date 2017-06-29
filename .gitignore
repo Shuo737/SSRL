@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+.sass-cache
+builds/**/images/*
+
+builds/development/fonts/*
+builds/development/js/*
+builds/development/css/*
+builds/development/img/*
+builds/development/gl-styles/*
+!builds/development/img/*.psd
+builds/development/lib/cache
+builds/production/*
+data
