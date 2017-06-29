@@ -373,7 +373,7 @@ function init_ui(){
   }
 
   setTimeout(function(){
-    console.log(getCookie("def_tutorial"));
+    // console.log(getCookie("def_tutorial"));
     if( getCookie("def_tutorial") != 0 || getCookie("def_tutorial") == ""){
       w2popup.open({
         title: 'Tutorial',
@@ -381,7 +381,7 @@ function init_ui(){
         height: 200,
         modal: true,
         body: '<div class="tutorial"><h3><i class="fa fa-video-camera"></i> Document Tutorial</h3><p>Welcome to the Northern Saskatchewan Communities! Do you need any introduction?</p></div>',
-        buttons   : '<button class="btn btn-default"><a href="docs/manual.html">Sure</a></button> <button class="btn btn-default" id="btnCancel">No Thanks!</button>',
+        buttons   : '<button class="btn btn-default"><a href="docs/manual.html" style="text-decoration: none !important;">Sure</a></button> <button class="btn btn-default" id="btnCancel">No Thanks!</button>',
         onOpen: function(e){
           e.onComplete = function(){
             $.cookie('def_tutorial', 0, { expires: 3650, path: '/' });
